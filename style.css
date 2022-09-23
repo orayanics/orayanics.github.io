@@ -16,11 +16,13 @@
   }
 
     .landing-img {
-      background-image: url("images/bgweb.jpg");
+      background-image: linear-gradient(to top, #221404ba, #201805cc),
+      url("images/bgweb.jpg");
       height: 100vh;
       background-position: center;
       background-size: cover;
       display: flex;
+      flex-direction: column;
       justify-content: center;
       align-items: center;
     }
@@ -28,6 +30,12 @@
     .landing-img h1 {
       font-family: 'Cinzel', serif;
       letter-spacing: 15px;
+    }
+
+    .landing-img h2 {
+      font-family: 'Cinzel', serif;
+      letter-spacing: 15px;
+      text-align: center;
     }
     
     /* Navbar CSS */
@@ -42,6 +50,7 @@
       flex-direction: row;
       justify-content:space-evenly;
       align-items: center;
+      text-align: center !important;
       backdrop-filter: blur(5px) !important; /* Blur Navbar*/
       background-color: rgb(24,24,24,0.2);
     }
@@ -55,12 +64,13 @@
         position: fixed;
         top: 0;
         width: 100vw;
+        z-index: 1;
     }
     
     /* Div CSS */
     .container {
-      margin-top: 2rem;
-      margin-bottom: 9rem;
+      margin-top: 5rem;
+      margin-bottom: 5rem;
     }
     
     .section {
@@ -81,7 +91,7 @@
       justify-content:space-evenly;
       align-items:center;
       text-align: justify;
-      width: 50vw;
+      width: 90vw;
     }
     
     .flex-media div {
@@ -102,6 +112,7 @@
       height: 450px;
       object-fit: cover;
       filter: grayscale(1);
+      margin: 3rem auto 3rem auto;
     }
     
     .collage img:hover {
@@ -149,21 +160,63 @@
       font-size: 1.5rem;
       color: #f7bf34 ;
     }
-    
+
     .section span {
       color: #f7bf34;
     }
-
+    
     /* If the screen size is 601px wide or more, set the font-size of <div> to 80px */
-@media screen and (min-width: 701px) {
+@media screen and (min-width: 901px) {
   .landing-img h1 {
     font-size: 9rem;
+  }
+
+  .landing-img h2 {
+    font-size: 3rem;
+  }
+
+  .section p {
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  .section h1 {
+    font-size: 5rem;
   }
 }
 
 /* If the screen size is 600px wide or less, set the font-size of <div> to 30px */
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 900px) {
   .landing-img h1 {
     font-size: 1.5rem;
+  }
+
+  .landing-img h2 {
+    font-size: 1.5rem;
+    margin: 5rem auto 2rem auto;
+  }
+
+  .flex-media {
+    margin: 5rem auto 2rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+    text-align: justify;
+    width: 80vw;
+  }
+
+  .collage {
+    width: 100%;
+    height: auto;
+    margin: 0 15px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+
+  table th {
+    font-family: 'Cinzel', serif;
+    font-size: 1rem;
+    color: #f7bf34 ;
   }
 }
