@@ -128,7 +128,7 @@
       flex-direction: row;
       justify-content: space-evenly !important;
       align-items: justify;
-      width: 100%;
+      width: 40vw;
     }
     
     .fa {
