@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+:root {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --swatch--pink-light: #ffe17de7;
+
+  /* hide scrollbar */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer 10+ */
+}
+
+@layer base {
+  html,
+  body {
+    @apply bg-stone-50;
+  }
+}
+
+.fade-up {
+  animation: fade-up 0.5s ease-out;
+  animation-fill-mode: both;
+}
+.fade-in-delay {
+  animation: fade-in 0.5s ease-out;
+  animation-delay: 0.3s;
+  animation-fill-mode: both;
+}
+.fade-in {
+  animation: fade-in 0.5s ease-out;
+  animation-fill-mode: both;
+}
+@keyframes fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
