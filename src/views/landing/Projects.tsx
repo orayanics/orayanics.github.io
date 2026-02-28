@@ -8,7 +8,9 @@ export default function Projects() {
     >
       <div className="grid grid-cols-12 items-center">
         <div className="col-span-12 md:col-span-2 fade-up">
-          <h2 className="font-mono text-center">Timeline of Projects</h2>
+          <h2 className="font-mono text-center pb-6 md:p-0">
+            Timeline of Projects
+          </h2>
         </div>
 
         <div className="col-span-12 md:col-span-10">
@@ -20,7 +22,7 @@ export default function Projects() {
                 style={{ animationDelay: `${index * 0.15}s` }}
               >
                 {/* dot */}
-                <span className="absolute -left-[5px] top-2 w-2 h-2 rounded-full bg-stone-100 border-2 border-white ring-1 ring-stone-300" />
+                <span className="absolute -left-1.25 top-2 w-2 h-2 rounded-full bg-stone-100 border-2 border-white ring-1 ring-stone-300" />
 
                 {/* year */}
                 <span className="text-xs font-mono font-semibold text-stone-400 uppercase tracking-widest">
@@ -31,7 +33,7 @@ export default function Projects() {
                 <div className="flex items-center justify-between ">
                   <p className="font-bold text-stone-800">{project.title}</p>
 
-                  <p className="font-mono tracking-tighter text-stone-500">
+                  <p className="font-mono tracking-tighter text-stone-500 text-right">
                     {project.role}
                   </p>
                 </div>

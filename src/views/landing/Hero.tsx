@@ -17,7 +17,7 @@ export default function Hero() {
         <h1 className="text-3xl leading-8 text-stone-800 font-medium tracking-normal">
           I{"'"}m Nicole Oraya <br />a web developer.
         </h1>
-        <p className="text-xl leading-6 tracking-normal text-center text-stone-800">
+        <p className="text-xl leading-6 tracking-normal text-stone-800">
           <span className="bg-linear-to-tr from-amber-400 to-orange-600 bg-clip-text text-transparent">
             Developing
           </span>{" "}
