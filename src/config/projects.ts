@@ -12,7 +12,7 @@ export const PROJECTS = [
   },
   {
     title: "TalkTherapy",
-    stack: ["MERN", "WebSocket", "WebRTC", "AWS EC2"],
+    stack: ["Bun", "Elysia", "TanStack Start", "WebSocket", "WebRTC"],
     role: "Developer",
     description: [
       "Designed and implemented the frontend interface using React and CSS framework Bootstrap to enhance web responsiveness and user experience.",
