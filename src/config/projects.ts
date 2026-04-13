@@ -1,29 +1,5 @@
 export const PROJECTS = [
   {
-    title: "MoneyDaddy",
-    stack: ["React", "Firebase"],
-    role: "Developer",
-    description: [
-      "Developed a responsive frontend interface using React and CSS framework Tailwind.",
-      "Integrated Firebase for authentication and database management.",
-    ],
-    year: "2024",
-    summary: "A web application for managing personal finances.",
-  },
-  {
-    title: "TalkTherapy",
-    stack: ["Bun", "Elysia", "TanStack Start", "WebSocket", "WebRTC"],
-    role: "Developer",
-    description: [
-      "Designed and implemented the frontend interface using React and CSS framework Bootstrap to enhance web responsiveness and user experience.",
-      "Integrated and implemented WebRTC for video conferencing and WebSocket for real-time notifications and messaging.",
-      "Implemented backend functionality such as CRON job, CRUD operations and email notifications.",
-    ],
-    year: "2024",
-    summary:
-      "A web application for online speech therapy sessions between clinicians and patients.",
-  },
-  {
     title: "UST-CRS Fil-Pat",
     stack: ["NextJS", "Prisma", "SQLite", "WebSocket", "Electron"],
     role: "Developer",
@@ -37,18 +13,38 @@ export const PROJECTS = [
       "A Filipino Picture Articulation Test (Fil-Pat) application for speech therapy sessions between clinicians and patients.",
   },
   {
-    title: "IAF CertSearch",
-    stack: ["React"],
-    role: "Jr. Frontend Developer",
+    title: "Coinz",
+    stack: ["Vue", "Pinia", "Zod", "Bun", "ElysiaJS", "SQLite"],
+    role: "Developer",
     description: [
-      "Contributed across multiple release cycles including feature sprints and hotfixes.",
-      "Integrated REST APIs from backend services into frontend components.",
-      "Migrated legacy codebase to current React standards.",
-      "Delivered UI components and responsive layouts across main, admin, and marketing surfaces.",
-      "Optimized Core Web Vitals through lazy loading, code splitting, and deferred rendering to improve LCP and TBT.",
+      "Developed and maintained a full CRUD API for wallets and transactions using ElysiaJS, Prisma, and SQLite, ensuring relational integrity and cascading deletes.",
+      "Designed and implemented frontend architecture using Vue Composition API with feature-based structure, integrating TanStack Query for caching and reactive data synchronization.",
+      "Implemented transaction-bImproved data consistency by implementing based balance computation, deriving wallet balances from income, expense, and adjustment records with explicit audit tracking.",
+      "Implemented pagination, sorting, debounced search, and analytics endpoints (aggregations and time-based insights) with flexible filtering.",
     ],
-    year: "2025-2026",
-    summary:
-      "A web application for searching and verifying certifications issued by the IAF.",
+    year: "2025",
+    summary: "A web application for managing personal finances.",
   },
-];
+  {
+    title: "TalkTherapy",
+    stack: [
+      "Bun",
+      "ElysiaJS",
+      "TanStack Start",
+      "WebSocket",
+      "WebRTC",
+      "SQLite",
+      "Zod",
+      "Better-Auth",
+    ],
+    role: "Developer",
+    description: [
+      "Developed and implemented a full CRUD API, content CMS, authentication and authorization using ElysiaJS, Prisma, SQLite, and Better-Auth which follows a module-based structure for both backend and frontend for developer experience.",
+      "Implemented RBAC and rate-limiting for backend endpoints and frontend views to ensure correct ownership and eliminate bypasses.",
+      "Integrated and implemented WebRTC for video conferencing and WebSocket for real-time notifications and messaging.",
+    ],
+    year: "2025",
+    summary:
+      "A web application for online speech therapy sessions between clinicians and patients.",
+  },
+].reverse();
