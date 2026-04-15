@@ -31,22 +31,29 @@ export default function Projects() {
 
                 {/* title */}
                 <div className="flex items-center justify-between ">
-                  <p className="font-bold text-stone-800">{project.title}</p>
+                  <a
+                    href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-bold text-stone-800 hover:text-yellow-800 transition-colors duration-200"
+                  >
+                    {project.title}
+                  </a>
 
                   <p className="font-mono tracking-tighter text-stone-500 text-right">
                     {project.role}
                   </p>
                 </div>
 
-                <p>
-                  <span className="text-sm text-stone-600">
-                    {project.summary}
-                  </span>
-                </p>
-
                 {/* stack */}
                 <p className="text-xs font-mono text-stone-400 mt-1 mb-3">
                   [{project.stack.join(", ")}]
+                </p>
+
+                <p className="border-b border-b-stone-300 pb-4 mb-4">
+                  <span className="text-sm text-stone-600">
+                    {project.summary}
+                  </span>
                 </p>
 
                 {/* descriptions */}

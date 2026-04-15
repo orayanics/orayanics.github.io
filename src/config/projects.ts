@@ -11,6 +11,7 @@ export const PROJECTS = [
     year: "2025",
     summary:
       "A Filipino Picture Articulation Test (Fil-Pat) application for speech therapy sessions between clinicians and patients.",
+    github: "https://github.com/orayanics/fil-pat",
   },
   {
     title: "Coinz",
@@ -24,6 +25,7 @@ export const PROJECTS = [
     ],
     year: "2025",
     summary: "A web application for managing personal finances.",
+    github: "https://github.com/orayanics/coinz",
   },
   {
     title: "TalkTherapy",
@@ -47,6 +49,7 @@ export const PROJECTS = [
     ],
     year: "2025",
     summary:
-      "TalkTherapy is a telehealth platform designed for Speech-Language Pathologists (SLPs) and their patients, providing tools for remote therapy sessions, progress tracking, and communication. The platform includes features such as video conferencing, real-time messaging, and a phoneme confidence test for self-assessment and speech exercises.",
+      "A telehealth platform designed for Speech-Language Pathologists (SLPs) and their patients, providing tools for remote therapy sessions, progress tracking, and communication. The platform includes features such as video conferencing, real-time messaging, and a phoneme confidence test for self-assessment and speech exercises.",
+    github: "https://github.com/orayanics/talktherapy",
   },
 ].reverse();
