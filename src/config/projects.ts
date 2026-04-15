@@ -28,8 +28,9 @@ export const PROJECTS = [
   {
     title: "TalkTherapy",
     stack: [
-      "Bun",
       "ElysiaJS",
+      "Python",
+      "FastAPI",
       "TanStack Start",
       "WebSocket",
       "WebRTC",
@@ -39,12 +40,13 @@ export const PROJECTS = [
     ],
     role: "Developer",
     description: [
+      "Implemented a Phoneme Confidence test for patients that serves as self-assessment and speech exercise for therapy",
+      "Integrated and implemented WebRTC for video conferencing and WebSocket for real-time notifications and messaging.",
       "Developed and implemented a full CRUD API, content CMS, authentication and authorization using ElysiaJS, Prisma, SQLite, and Better-Auth which follows a module-based structure for both backend and frontend for developer experience.",
       "Implemented RBAC and rate-limiting for backend endpoints and frontend views to ensure correct ownership and eliminate bypasses.",
-      "Integrated and implemented WebRTC for video conferencing and WebSocket for real-time notifications and messaging.",
     ],
     year: "2025",
     summary:
-      "A web application for online speech therapy sessions between clinicians and patients.",
+      "TalkTherapy is a telehealth platform designed for Speech-Language Pathologists (SLPs) and their patients, providing tools for remote therapy sessions, progress tracking, and communication. The platform includes features such as video conferencing, real-time messaging, and a phoneme confidence test for self-assessment and speech exercises.",
   },
 ].reverse();
