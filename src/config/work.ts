@@ -1,3 +1,5 @@
+import { IAF_CERT } from "./asset";
+
 export const WORK = [
   {
     title: "IAF CertSearch",
@@ -11,6 +13,8 @@ export const WORK = [
     ],
     year: "February 2025 - February 2026",
     summary:
-      "A web application for searching and verifying certifications issued by the IAF.",
+      "The official global database for accredited certificates. Check ISO certification online or verify other international, national, and sector standard certificates with instant alerts.",
+    image: IAF_CERT,
+    link: "https://www.iafcertsearch.org/",
   },
 ];

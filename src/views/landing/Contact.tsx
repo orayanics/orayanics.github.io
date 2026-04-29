@@ -3,15 +3,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 
 export default function Contact() {
   return (
-    <section
-      className="text-stone-800 font-medium tracking-normal text-left mx-auto my-6 fade-in"
-      id="contact"
-    >
-      <h2 className="text-[2rem] leading-[1.1]">
-        Interested in working together?
-      </h2>
-      <p className="md:text-lg text-base mt-3">
-        Contact me at <span className="font-mono">orayanics@gmail.com</span>
+    <section className="lg:p-0 p-4 fade-in" id="contact">
+      <p className="text-xs text-neutral-600">GET IN TOUCH</p>
+      <p className="font-black text-5xl md:text-7xl">CONTACTS</p>
+
+      <p className="md:text-lg text-base mt-1">
+        <span className="font-mono">orayanics@gmail.com</span>
       </p>
 
       <div className="flex gap-5 mt-5">

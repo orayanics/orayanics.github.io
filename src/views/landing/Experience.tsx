@@ -1,15 +1,15 @@
-import { PROJECTS } from "../../config/projects";
+import { WORK } from "../../config/work";
 
-export default function Work() {
+export default function Experience() {
   return (
-    <section className="lg:p-0 p-4 space-y-10" id="work">
+    <section className="lg:p-0 p-4 space-y-10" id="experience">
       <div>
-        <p className="text-xs text-neutral-600">SELECTED PROJECTS</p>
-        <p className="font-black text-5xl md:text-7xl">PROJECT</p>
+        <p className="text-xs text-neutral-600">PROFESSIONAL EXPERIENCE</p>
+        <p className="font-black text-5xl md:text-7xl">WORK</p>
       </div>
 
       <div className="grid grid-cols-1 gap-6">
-        {PROJECTS.map((project, index) => (
+        {WORK.map((project, index) => (
           <div
             key={index}
             className="border border-neutral-300
@@ -39,41 +39,22 @@ export default function Work() {
               ))}
 
               <p className="text-neutral-600 mb-4">{project.summary}</p>
-
-              <div className="space-x-2">
-                <a
-                  href={project.github}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="hover:bg-neutral-700 hover:text-white transition-colors
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:bg-neutral-700 hover:text-white transition-colors
                 border border-neutral-300 rounded px-2 py-0.5 text-xs text-neutral-600"
-                >
-                  View on GitHub
-                </a>
-
-                {project.link && (
-                  <a
-                    href={project.link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="hover:bg-neutral-700 hover:text-white transition-colors
-                border border-neutral-300 rounded px-2 py-0.5 text-xs text-neutral-600"
-                  >
-                    View Live
-                  </a>
-                )}
-              </div>
+              >
+                View Live
+              </a>
             </div>
 
             <div
               className="col-span-12 md:col-span-7
             md:order-2 order-1 relative"
             >
-              <a
-                href={project.github || project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
                 <div
                   className="absolute inset-0
                 bg-black mix-blend-hue
@@ -89,19 +70,6 @@ export default function Work() {
                 <img
                   src={project.image}
                   alt={`${project.title} screenshot`}
-                  className="w-full h-auto
-                  rounded-t-lg md:rounded-t-none
-                  rounded-r-none md:rounded-r-lg"
-                />
-              )}
-
-              {project.video && (
-                <video
-                  src={project.video}
-                  autoPlay={true}
-                  loop={true}
-                  muted={true}
-                  controls={false}
                   className="w-full h-auto
                   rounded-t-lg md:rounded-t-none
                   rounded-r-none md:rounded-r-lg"
