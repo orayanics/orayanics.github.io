@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { PROJECTS } from "~/config/projects";
 
 export default function Work() {
@@ -41,6 +42,14 @@ export default function Work() {
               <p className="text-neutral-600 mb-4">{project.summary}</p>
 
               <div className="space-x-2">
+                <Link
+                  to={`/project/${project.slug}`}
+                  className="hover:bg-neutral-700 hover:text-white transition-colors
+                border border-neutral-300 rounded px-2 py-0.5 text-xs text-neutral-600"
+                >
+                  Read More
+                </Link>
+
                 <a
                   href={project.github}
                   target="_blank"

@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import { WORK } from "~/config/work";
 
 export default function Experience() {
@@ -39,15 +40,25 @@ export default function Experience() {
               ))}
 
               <p className="text-neutral-600 mb-4">{project.summary}</p>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:bg-neutral-700 hover:text-white transition-colors
+              <div className="space-x-2">
+                <Link
+                  to={`/work/${project.slug}`}
+                  className="hover:bg-neutral-700 hover:text-white transition-colors
                 border border-neutral-300 rounded px-2 py-0.5 text-xs text-neutral-600"
-              >
-                View Live
-              </a>
+                >
+                  Read More
+                </Link>
+
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="hover:bg-neutral-700 hover:text-white transition-colors
+                border border-neutral-300 rounded px-2 py-0.5 text-xs text-neutral-600"
+                >
+                  View Live
+                </a>
+              </div>
             </div>
 
             <div
