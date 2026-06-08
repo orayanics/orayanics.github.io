@@ -67,7 +67,7 @@ export const PROJECTS = [
     overview:
       "NMIXX Studio is a fan-made web page for the K-pop group NMIXX which collates information about the group such as member profiles, track details, and videography. The application uses the YouTube API to fetch and display the group's videography, including music videos, dance practices, and variety show appearances.",
     github: "https://github.com/orayanics/nmixx-studio",
-    link: "https://nmixx-studio.up.railway.app/",
+    link: "https://nmixx-studio.vercel.app/",
     video: NMIXX_ASSETS.landing,
     videos: NMIXX_ASSETS,
   },
